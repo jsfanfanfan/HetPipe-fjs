@@ -1,0 +1,37 @@
+data文件夹没有修改
+debug文件夹是新增的
+fp16文件夹没有修改
+fused_kernels没有修改
+model:
+    修改__init__.py
+    修改bert_model.py line 26 176-178
+    修改distributed.py line 188-227
+    修改gpt_model.py line 102
+    修改language_model.py line 293 325
+    修改transformer.py ParallelTransformer类
+
+mpu:
+    修改__init__.py line 44 69
+    修改cross_entropy line 82-95
+    修改initialize.py line 47 117 163-183 189-191 305 396-399 404 412
+    修改random.py line 260
+    增加 Rng_Buffer.py
+
+optimizer:
+    修改__init__.py line 120
+    修改clip_grads.py
+    修改optimizer.py line 72 81 321-327 335-339 494 525
+
+修改arguments.py
+    line 157-160 339 457 607 691
+
+修改checkpointing.py line 109
+
+修改initialize.py line 179
+
+修改schedules.py
+
+修改training.py line 109 150 159 199 251 278
+                    322 345 365 379 435 456 614
+                    646 660 666 720 767 788 817
+                    853 865

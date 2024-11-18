@@ -1,0 +1,8 @@
+（1）recomputation和sprecomputation的区别：
+    sp代表什么？在脚本中只有两个参数的区别
+    --sprecompute True \ 增加参数s speed up recompute 应该是recomputatiom-aware schedule
+    --DDP-impl torch 增加参数p 表示数据并行
+
+（2）wfbp是什么意思？貌似是带权反向传播
+（3）decrease, memory都是什么意思？
+
