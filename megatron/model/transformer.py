@@ -556,7 +556,7 @@ class ParallelTransformer(MegatronModule):
         # Store activation checkpoiting flag.
         self.checkpoint_activations = args.checkpoint_activations
         self.checkpoint_num_layers = args.checkpoint_num_layers
-        self.partition_vector = partition_vector
+        self.partition_vector = partition_vector # 层的划分主要依靠这个参数实现
         # Number of layers.
         # assert args.num_layers % mpu.get_pipeline_model_parallel_world_size() == 0, \
         #     'num_layers must be divisible by pipeline_model_parallel_size'
